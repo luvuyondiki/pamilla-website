@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="300" height="120">
+  <!-- Globe Circle -->
+  <circle cx="60" cy="60" r="45" fill="none" stroke="#1e3a8a" stroke-width="2"/>
+  
+  <!-- Continent shapes inside globe -->
+  <path d="M25 40 Q30 35 35 40 Q40 45 35 50 Q30 55 25 50 Q20 45 25 40" fill="#1e3a8a" opacity="0.3"/>
+  <path d="M45 30 Q50 25 55 30 Q60 35 55 40 Q50 45 45 40 Q40 35 45 30" fill="#1e3a8a" opacity="0.3"/>
+  <path d="M35 60 Q40 55 45 60 Q50 65 45 70 Q40 75 35 70 Q30 65 35 60" fill="#1e3a8a" opacity="0.3"/>
+  <path d="M55 50 Q60 45 65 50 Q70 55 65 60 Q60 65 55 60 Q50 55 55 50" fill="#1e3a8a" opacity="0.3"/>
+  
+  <!-- Location pin -->
+  <g transform="translate(75, 25)">
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#1e3a8a" stroke-width="2"/>
+    <path d="M0 -8 L-4 0 L0 8 L4 0 Z" fill="#1e3a8a"/>
+    <circle cx="0" cy="0" r="3" fill="#1e3a8a"/>
+  </g>
+  
+  <!-- Spiral design on pin -->
+  <path d="M75 25 Q78 22 81 25 Q84 28 81 31 Q78 34 75 31 Q72 28 75 25" fill="none" stroke="#1e3a8a" stroke-width="1.5"/>
+  
+  <!-- UBUNTU VOYAGE text -->
+  <text x="130" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e3a8a">UBUNTU VOYAGE</text>
+  
+  <!-- RECRUITMENT & TRAVEL AGENCY text -->
+  <text x="130" y="65" font-family="Arial, sans-serif" font-size="12" font-weight="300" fill="#64748b" text-transform="uppercase" letter-spacing="2">RECRUITMENT & TRAVEL AGENCY</text>
+</svg>

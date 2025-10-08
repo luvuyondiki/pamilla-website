@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32">
+  <!-- Globe Circle -->
+  <circle cx="50" cy="50" r="35" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+  
+  <!-- Simplified continent shapes -->
+  <path d="M25 35 Q30 30 35 35 Q40 40 35 45 Q30 50 25 45 Q20 40 25 35" fill="#1e3a8a" opacity="0.3"/>
+  <path d="M45 25 Q50 20 55 25 Q60 30 55 35 Q50 40 45 35 Q40 30 45 25" fill="#1e3a8a" opacity="0.3"/>
+  <path d="M35 55 Q40 50 45 55 Q50 60 45 65 Q40 70 35 65 Q30 60 35 55" fill="#1e3a8a" opacity="0.3"/>
+  
+  <!-- Location pin -->
+  <g transform="translate(65, 20)">
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#1e3a8a" stroke-width="2"/>
+    <path d="M0 -6 L-3 0 L0 6 L3 0 Z" fill="#1e3a8a"/>
+    <circle cx="0" cy="0" r="2" fill="#1e3a8a"/>
+  </g>
+</svg>

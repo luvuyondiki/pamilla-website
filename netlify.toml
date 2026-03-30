@@ -3,6 +3,21 @@
   publish = "."
 
 [[redirects]]
+  from = "/opportunities"
+  to = "/opportunities.html"
+  status = 200
+
+[[redirects]]
+  from = "/travel"
+  to = "/opportunities.html"
+  status = 301
+
+[[redirects]]
+  from = "/recruitment"
+  to = "/opportunities.html"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

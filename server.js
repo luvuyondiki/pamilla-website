@@ -64,12 +64,16 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+app.get('/opportunities', (req, res) => {
+    res.sendFile(path.join(__dirname, 'opportunities.html'));
+});
+
 app.get('/travel', (req, res) => {
-    res.sendFile(path.join(__dirname, 'travel.html'));
+    res.redirect(301, '/opportunities');
 });
 
 app.get('/recruitment', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.redirect(301, '/opportunities');
 });
 
 // CV Upload endpoint

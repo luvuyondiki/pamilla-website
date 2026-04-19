@@ -197,8 +197,7 @@ a:hover {
 /* Header */
 .site-header {
   position: relative;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(14px);
+  background: var(--white);
   border-bottom: 1px solid var(--border);
 }
 
@@ -549,65 +548,17 @@ a:hover {
   padding: var(--section-y) 0;
 }
 
-/* Light sections: frosted panels over the global fixed body photo */
+/* Light sections — solid panels (no translucent frosted layers) */
 .section--about,
 .section--paths,
 .section--destinations,
-.section--detail,
+.section--detail {
+  background-color: var(--white);
+}
+
 .section--alt,
 .section--soft {
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-}
-
-.section--about {
-  background-color: rgba(255, 255, 255, 0.78);
-}
-
-.section--paths {
-  background-color: rgba(255, 255, 255, 0.74);
-}
-
-.section--destinations {
-  background-color: rgba(255, 255, 255, 0.76);
-}
-
-.section--detail {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.section--alt {
-  background-color: rgba(244, 248, 253, 0.76);
-}
-
-.section--soft {
-  background-color: rgba(244, 248, 253, 0.72);
-}
-
-@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
-  .section--about {
-    background-color: rgba(255, 255, 255, 0.94);
-  }
-
-  .section--paths {
-    background-color: rgba(255, 255, 255, 0.92);
-  }
-
-  .section--destinations {
-    background-color: rgba(255, 255, 255, 0.93);
-  }
-
-  .section--detail {
-    background-color: rgba(255, 255, 255, 0.95);
-  }
-
-  .section--alt {
-    background-color: rgba(244, 248, 253, 0.94);
-  }
-
-  .section--soft {
-    background-color: rgba(244, 248, 253, 0.92);
-  }
+  background-color: var(--blue-50);
 }
 
 .section--contact {
@@ -965,7 +916,7 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--white);
   color: var(--blue-900);
   box-shadow: var(--shadow-sm);
 }
@@ -1163,17 +1114,9 @@ a:hover {
 
 /* Summary strip */
 .trip-summary {
-  background-color: rgba(244, 248, 253, 0.72);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: var(--white);
   border-bottom: 1px solid var(--border);
   padding: 1.25rem 0;
-}
-
-@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
-  .trip-summary {
-    background: var(--blue-50);
-  }
 }
 
 .trip-summary__inner {
@@ -1234,10 +1177,6 @@ a:hover {
   border-radius: var(--radius-lg);
   padding: 1.5rem 1.5rem 1.65rem;
   box-shadow: var(--shadow-sm);
-}
-
-.section--soft {
-  background: var(--blue-50);
 }
 
 .crosslist {
@@ -2103,8 +2042,7 @@ a:hover {
   right: 0;
   z-index: 60;
   padding: 0.65rem 1rem calc(0.65rem + env(safe-area-inset-bottom, 0));
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(10px);
+  background: var(--white);
   border-top: 1px solid var(--border);
   box-shadow: 0 -8px 30px rgba(10, 22, 40, 0.1);
   gap: 0.75rem;
@@ -2275,7 +2213,7 @@ a:hover {
   padding: clamp(1.75rem, 4vw, 2.25rem);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, var(--blue-50) 100%);
+  background: linear-gradient(180deg, var(--white) 0%, var(--blue-50) 100%);
   box-shadow: var(--shadow-sm);
 }
 

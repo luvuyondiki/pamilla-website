@@ -62,7 +62,7 @@ body::before {
   inset: 0;
   z-index: -1;
   background-color: var(--blue-900);
-  background-image: url("assets/opp-travel-bay.png");
+  background-image: url("assets/home-4-travel.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

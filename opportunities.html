@@ -8,6 +8,7 @@
   <meta property="og:title" content="Opportunities in Asia | UbuntuVoyage">
   <meta property="og:description" content="Teach in Thailand or join our curated group trips across Asia.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/opp-teach-1.png">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,35 +18,68 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="shell site-header__inner">
-      <a class="brand" href="/">
-        <img src="logo.svg" alt="" width="40" height="40" class="brand__mark" aria-hidden="true">
-        <span class="brand__text">UbuntuVoyage</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-menu-opp" id="nav-toggle">
-          <span class="nav__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
-          <span class="nav__toggle-label">Menu</span>
-        </button>
-        <ul class="nav__list" id="nav-menu-opp">
-          <li><a href="/" class="nav__link">Home</a></li>
-          <li><a href="/opportunities" class="nav__link nav__link--active">Opportunities in Asia</a></li>
-        </ul>
-      </nav>
-      <a class="btn btn--primary btn--sm header-cta" href="#contact">Contact Us</a>
+  <div class="site-header-wrap" id="site-header-wrap">
+    <div class="topbar">
+      <div class="shell topbar__inner">
+        <a class="topbar__link" href="https://wa.me/66966488938" rel="noopener noreferrer" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          WhatsApp
+        </a>
+        <span class="topbar__sep" aria-hidden="true">|</span>
+        <a class="topbar__link" href="mailto:pamillakayingana@gmail.com">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          pamillakayingana@gmail.com
+        </a>
+      </div>
     </div>
-  </header>
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="brand" href="/">
+          <img src="logo.svg" alt="" width="40" height="40" class="brand__mark" aria-hidden="true">
+          <span class="brand__text">UbuntuVoyage</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-menu-opp" id="nav-toggle">
+            <span class="nav__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="nav__toggle-label">Menu</span>
+          </button>
+          <ul class="nav__list" id="nav-menu-opp">
+            <li><a href="/" class="nav__link">Home</a></li>
+            <li><a href="/opportunities" class="nav__link nav__link--active">Opportunities in Asia</a></li>
+            <li><a href="/trips" class="nav__link">Trips &amp; Experiences</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn--accent btn--sm header-cta" href="#contact">Contact</a>
+      </div>
+    </header>
+  </div>
 
   <main id="main">
-    <section class="page-hero">
+    <section class="page-hero page-hero--rich reveal" aria-labelledby="page-hero-title">
       <div class="shell page-hero__inner">
-        <h1 class="page-hero__title">Opportunities in Asia</h1>
+        <p class="page-hero__eyebrow">Recruitment &amp; travel</p>
+        <h1 id="page-hero-title" class="page-hero__title">Opportunities in Asia</h1>
         <p class="page-hero__lead">Recruitment and travel—one trusted partner for your next chapter in Asia.</p>
+        <div class="page-hero__stats">
+          <ul class="stat-strip stat-strip--count-3">
+            <li class="stat-strip__item">
+              <p class="stat-strip__value"><span class="stat-strip__num" data-count="5" data-suffix="+">0</span></p>
+              <p class="stat-strip__label">Guided milestones from application to arrival</p>
+            </li>
+            <li class="stat-strip__item">
+              <p class="stat-strip__value"><span class="stat-strip__num" data-count="3" data-suffix="+">0</span></p>
+              <p class="stat-strip__label">Countries we regularly support in Asia</p>
+            </li>
+            <li class="stat-strip__item">
+              <p class="stat-strip__value"><span class="stat-strip__num" data-count="100" data-suffix="%">0</span></p>
+              <p class="stat-strip__label">Transparent checklist—no hidden steps</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="section section--detail" id="teach" aria-labelledby="teach-title">
+    <section class="section section--detail reveal" id="teach" aria-labelledby="teach-title">
       <div class="shell split split--reverse">
         <div class="split__text">
           <p class="eyebrow">Recruitment</p>
@@ -92,7 +126,7 @@
       </div>
     </section>
 
-    <section class="section section--alt" id="travel" aria-labelledby="travel-title">
+    <section class="section section--alt reveal" id="travel" aria-labelledby="travel-title">
       <div class="shell split">
         <div class="split__text">
           <p class="eyebrow">Travel agency</p>
@@ -101,21 +135,21 @@
             Explore Thailand through our curated group trips designed for comfort, fun, and unforgettable memories.
           </p>
 
-          <h3 class="list-heading">Thailand group trips</h3>
+          <h3 class="list-heading">Curated group trips</h3>
           <p class="prose">
-            Join our group trips including flights, accommodation, breakfast, and transport. Perfect for first-time travelers who want a stress-free experience.
+            Browse Thailand, South Africa, Bali, and Vietnam itineraries with day-by-day plans, galleries, and clear deposit plus installment options.
           </p>
 
-          <h3 class="list-heading">What’s included</h3>
+          <h3 class="list-heading">What’s typically included</h3>
           <ul class="checklist">
-            <li>Return flights</li>
+            <li>Return flights (group allocation)</li>
             <li>Hotel accommodation</li>
             <li>Breakfast</li>
             <li>Transport</li>
             <li>Optional activities (island hopping, cooking classes, and more)</li>
           </ul>
 
-          <a class="btn btn--primary btn--lg" href="mailto:pamillakayingana@gmail.com?subject=Thailand%20Group%20Trip%20%E2%80%93%20Booking">Book Your Spot</a>
+          <a class="btn btn--primary btn--lg" href="/trips">View trips &amp; experiences</a>
         </div>
         <figure class="split__figure split__figure--flush">
           <img
@@ -129,7 +163,7 @@
       </div>
     </section>
 
-    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+    <section class="section section--contact reveal" id="contact" aria-labelledby="contact-title">
       <div class="shell contact-panel">
         <h2 id="contact-title" class="section__title section__title--center">Contact us</h2>
         <p class="section__intro">For more information or inquiries:</p>
@@ -155,14 +189,45 @@
   </main>
 
   <footer class="site-footer">
-    <div class="shell site-footer__inner">
-      <p class="site-footer__brand">UbuntuVoyage</p>
-      <p class="site-footer__tagline">From Africa to Asia</p>
-      <div class="site-footer__links">
-        <a href="https://www.instagram.com/travelw_pami/" rel="noopener noreferrer" target="_blank">Instagram</a>
-        <a href="mailto:pamillakayingana@gmail.com">Email</a>
-        <a href="https://wa.me/66966488938" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+    <div class="shell site-footer__grid">
+      <div>
+        <p class="site-footer__brand">UbuntuVoyage</p>
+        <p class="site-footer__tagline">From Africa to Asia</p>
+        <p class="site-footer__blurb">Curated trips and teaching support—one team that understands both journeys.</p>
       </div>
+      <div>
+        <h2 class="site-footer__heading">Explore</h2>
+        <ul class="site-footer__nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/opportunities">Opportunities in Asia</a></li>
+          <li><a href="/trips">Trips &amp; Experiences</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="site-footer__heading">Contact</h2>
+        <ul class="site-footer__contact">
+          <li>
+            <a href="https://wa.me/66966488938" rel="noopener noreferrer" target="_blank">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="mailto:pamillakayingana@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/travelw_pami/" rel="noopener noreferrer" target="_blank">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="shell site-footer__bottom">
       <p class="site-footer__copy">&copy; <span id="year"></span> UbuntuVoyage. All rights reserved.</p>
     </div>
   </footer>

@@ -68,6 +68,26 @@ app.get('/opportunities', (req, res) => {
     res.sendFile(path.join(__dirname, 'opportunities.html'));
 });
 
+app.get('/trips', (req, res) => {
+    res.sendFile(path.join(__dirname, 'trips.html'));
+});
+
+app.get('/trips/thailand', (req, res) => {
+    res.sendFile(path.join(__dirname, 'trip-thailand.html'));
+});
+
+app.get('/trips/south-africa', (req, res) => {
+    res.sendFile(path.join(__dirname, 'trip-south-africa.html'));
+});
+
+app.get('/trips/bali', (req, res) => {
+    res.sendFile(path.join(__dirname, 'trip-bali.html'));
+});
+
+app.get('/trips/vietnam', (req, res) => {
+    res.sendFile(path.join(__dirname, 'trip-vietnam.html'));
+});
+
 app.get('/travel', (req, res) => {
     res.redirect(301, '/opportunities');
 });
@@ -162,10 +182,14 @@ app.post('/api/contact', (req, res) => {
 // Booking endpoint
 app.post('/api/book-tour', (req, res) => {
     try {
+        const travelerCount = parseInt(String(req.body.travelers), 10);
         const booking = {
             id: Date.now(),
             tour: req.body.tour,
-            travelers: parseInt(req.body.travelers),
+            name: req.body.name,
+            email: req.body.email,
+            phone: req.body.phone,
+            travelers: Number.isFinite(travelerCount) ? Math.min(50, Math.max(1, travelerCount)) : 1,
             startDate: req.body.startDate,
             endDate: req.body.endDate,
             specialRequests: req.body.specialRequests,
@@ -178,6 +202,9 @@ app.post('/api/book-tour', (req, res) => {
         // Log booking
         console.log('🎫 New Tour Booking:', {
             tour: booking.tour,
+            name: booking.name,
+            email: booking.email,
+            phone: booking.phone,
             travelers: booking.travelers,
             startDate: booking.startDate,
             endDate: booking.endDate

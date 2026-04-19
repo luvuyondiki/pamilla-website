@@ -8,6 +8,7 @@
   <meta property="og:title" content="UbuntuVoyage – From Africa to Asia">
   <meta property="og:description" content="Teaching in Thailand and curated travel across Asia. Simple, exciting, and accessible.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/home-1-hero.png">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,29 +18,45 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="shell site-header__inner">
-      <a class="brand" href="/">
-        <img src="logo.svg" alt="" width="40" height="40" class="brand__mark" aria-hidden="true">
-        <span class="brand__text">UbuntuVoyage</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" id="nav-toggle">
-          <span class="nav__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
-          <span class="nav__toggle-label">Menu</span>
-        </button>
-        <ul class="nav__list" id="nav-menu">
-          <li><a href="/" class="nav__link nav__link--active">Home</a></li>
-          <li><a href="/opportunities" class="nav__link">Opportunities in Asia</a></li>
-        </ul>
-      </nav>
-      <a class="btn btn--primary btn--sm header-cta" href="#choose-path">Start Your Journey</a>
+  <div class="site-header-wrap" id="site-header-wrap">
+    <div class="topbar">
+      <div class="shell topbar__inner">
+        <a class="topbar__link" href="https://wa.me/66966488938" rel="noopener noreferrer" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          WhatsApp
+        </a>
+        <span class="topbar__sep" aria-hidden="true">|</span>
+        <a class="topbar__link" href="mailto:pamillakayingana@gmail.com">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          pamillakayingana@gmail.com
+        </a>
+      </div>
     </div>
-  </header>
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="brand" href="/">
+          <img src="logo.svg" alt="" width="40" height="40" class="brand__mark" aria-hidden="true">
+          <span class="brand__text">UbuntuVoyage</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" id="nav-toggle">
+            <span class="nav__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="nav__toggle-label">Menu</span>
+          </button>
+          <ul class="nav__list" id="nav-menu">
+            <li><a href="/" class="nav__link nav__link--active">Home</a></li>
+            <li><a href="/opportunities" class="nav__link">Opportunities in Asia</a></li>
+            <li><a href="/trips" class="nav__link">Trips &amp; Experiences</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn--accent btn--sm header-cta" href="/trips">Browse trips</a>
+      </div>
+    </header>
+  </div>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__media">
+      <div class="hero__media hero__media--motion">
         <img
           src="assets/home-1-hero.png"
           alt="Tropical bay at dusk with boats and forested hills along the shore"
@@ -50,26 +67,57 @@
         <div class="hero__overlay" aria-hidden="true"></div>
       </div>
       <div class="shell hero__content">
-        <h1 id="hero-title" class="hero__title">UbuntuVoyage – From Africa to Asia</h1>
-        <p class="hero__lead">
-          Helping you work, travel, and experience life in Asia through teaching opportunities and curated group trips.
+        <p class="eyebrow hero__eyebrow--gold reveal">Africa to Asia</p>
+        <h1 id="hero-title" class="hero__title reveal">UbuntuVoyage — your bridge to teaching &amp; curated travel</h1>
+        <p class="hero__lead reveal">
+          Real support for teaching placements in Asia and small-group trips with flights, stays, and transport handled—so you focus on the experience.
         </p>
-        <a class="btn btn--light btn--lg" href="#choose-path">Start Your Journey</a>
+        <div class="hero__actions reveal">
+          <a class="btn btn--accent btn--lg" href="/trips">Browse curated trips</a>
+          <a class="btn btn--light btn--lg" href="/opportunities#teach">Teach in Asia</a>
+        </div>
       </div>
     </section>
 
-    <section class="section section--about" id="about" aria-labelledby="about-title">
+    <section class="section section--stats reveal" aria-labelledby="stats-title">
+      <h2 id="stats-title" class="visually-hidden">Why travellers choose us</h2>
+      <div class="shell">
+        <ul class="stat-strip">
+          <li class="stat-strip__item">
+            <p class="stat-strip__value"><span class="stat-strip__num" data-count="4" data-suffix="+">0</span></p>
+            <p class="stat-strip__label">Curated trip destinations</p>
+          </li>
+          <li class="stat-strip__item">
+            <p class="stat-strip__value"><span class="stat-strip__num" data-count="10" data-suffix="+">0</span></p>
+            <p class="stat-strip__label">Years combined Asia experience</p>
+          </li>
+          <li class="stat-strip__item">
+            <p class="stat-strip__value"><span class="stat-strip__num" data-count="100" data-suffix="%">0</span></p>
+            <p class="stat-strip__label">Trip planning support on every booking</p>
+          </li>
+          <li class="stat-strip__item">
+            <p class="stat-strip__value"><span class="stat-strip__num" data-count="2" data-suffix="">0</span></p>
+            <p class="stat-strip__label">Paths: teach abroad or travel with us</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--about reveal" id="about" aria-labelledby="about-title">
       <div class="shell split">
         <div class="split__text">
-          <h2 id="about-title" class="section__title">Who we are</h2>
-          <p class="prose">
+          <p class="eyebrow eyebrow--accent">Who we are</p>
+          <div class="divider-gold"></div>
+          <h2 id="about-title" class="section__title">Guidance from people who’ve lived it</h2>
+          <p class="prose prose--narrow">
             UbuntuVoyage was created to help Africans explore opportunities beyond borders. Whether you’re looking to teach in Asia or travel through some of the most beautiful destinations in the world, we guide you every step of the way.
           </p>
-          <p class="prose">
+          <p class="prose prose--narrow">
             With real experience living and working in Asia, we make the process simple, exciting, and accessible.
           </p>
+          <blockquote class="pull-quote">Your next chapter should feel exciting—not overwhelming.</blockquote>
         </div>
-        <figure class="split__figure">
+        <figure class="split__figure reveal">
           <img
             src="assets/home-2-about.png"
             alt="Teachers and students at Kajonkiet Kokkloy School in Thailand"
@@ -81,12 +129,66 @@
       </div>
     </section>
 
-    <section class="section section--paths" id="choose-path" aria-labelledby="paths-title">
+    <section class="section section--destinations reveal" aria-labelledby="dest-heading">
+      <div class="shell">
+        <p class="eyebrow eyebrow--accent eyebrow--center">Popular right now</p>
+        <h2 id="dest-heading" class="section__title section__title--center">Where we take you</h2>
+        <p class="section__intro">Tap a destination for full itineraries, galleries, and booking.</p>
+        <div class="dest-grid reveal-stagger">
+          <a class="dest-tile reveal" href="/trips/thailand">
+            <div class="dest-tile__media">
+              <img src="assets/opp-travel-bay.png" alt="" width="640" height="427" loading="lazy" decoding="async">
+            </div>
+            <div class="dest-tile__overlay" aria-hidden="true"></div>
+            <div class="dest-tile__body">
+              <p class="dest-tile__meta">Asia · 10 days</p>
+              <h3 class="dest-tile__title">Thailand</h3>
+              <span class="dest-tile__cta">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a class="dest-tile reveal" href="/trips/bali">
+            <div class="dest-tile__media">
+              <img src="assets/home-4-travel.png" alt="" width="1024" height="682" loading="lazy" decoding="async">
+            </div>
+            <div class="dest-tile__overlay" aria-hidden="true"></div>
+            <div class="dest-tile__body">
+              <p class="dest-tile__meta">Asia · 8 days</p>
+              <h3 class="dest-tile__title">Bali</h3>
+              <span class="dest-tile__cta">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a class="dest-tile reveal" href="/trips/vietnam">
+            <div class="dest-tile__media">
+              <img src="assets/home-3-teach.png" alt="" width="1024" height="716" loading="lazy" decoding="async">
+            </div>
+            <div class="dest-tile__overlay" aria-hidden="true"></div>
+            <div class="dest-tile__body">
+              <p class="dest-tile__meta">Asia · 9 days</p>
+              <h3 class="dest-tile__title">Vietnam</h3>
+              <span class="dest-tile__cta">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </a>
+          <a class="dest-tile reveal" href="/trips/south-africa">
+            <div class="dest-tile__media">
+              <img src="assets/home-1-hero.png" alt="" width="640" height="427" loading="lazy" decoding="async">
+            </div>
+            <div class="dest-tile__overlay" aria-hidden="true"></div>
+            <div class="dest-tile__body">
+              <p class="dest-tile__meta">Africa · 7 days</p>
+              <h3 class="dest-tile__title">South Africa</h3>
+              <span class="dest-tile__cta">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paths reveal" id="choose-path" aria-labelledby="paths-title">
       <div class="shell">
         <h2 id="paths-title" class="section__title section__title--center">Choose your path</h2>
         <p class="section__intro">Teaching career or a curated adventure—we’ll help you get there.</p>
-        <div class="path-grid">
-          <article class="path-card">
+        <div class="path-grid reveal-stagger">
+          <article class="path-card reveal">
             <div class="path-card__image">
               <img
                 src="assets/home-3-teach.png"
@@ -97,6 +199,12 @@
                 decoding="async">
             </div>
             <div class="path-card__body">
+              <div class="path-card__icons">
+                <span class="path-card__icon-chip">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                  Teach
+                </span>
+              </div>
               <h3 class="path-card__title">Teach in Asia</h3>
               <p class="path-card__text">
                 Start your journey as an English teacher in Thailand and other parts of Asia. Gain international experience, earn an income, and explore a new culture.
@@ -104,7 +212,7 @@
               <a class="btn btn--primary" href="/opportunities#teach">Apply to Teach</a>
             </div>
           </article>
-          <article class="path-card">
+          <article class="path-card reveal">
             <div class="path-card__image">
               <img
                 src="assets/home-4-travel.png"
@@ -115,27 +223,79 @@
                 decoding="async">
             </div>
             <div class="path-card__body">
+              <div class="path-card__icons">
+                <span class="path-card__icon-chip">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  Travel
+                </span>
+              </div>
               <h3 class="path-card__title">Travel with us</h3>
               <p class="path-card__text">
-                Join curated group trips designed for unforgettable experiences in Thailand and beyond.
+                Join curated group trips designed for unforgettable experiences in Thailand, Bali, Vietnam, South Africa, and beyond.
               </p>
-              <a class="btn btn--secondary" href="/opportunities#travel">Travel with Us</a>
+              <a class="btn btn--secondary" href="/trips">Browse trips</a>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip reveal" aria-labelledby="cta-strip-title">
+      <div class="shell cta-strip__inner">
+        <h2 id="cta-strip-title" class="cta-strip__title">Ready when you are</h2>
+        <p class="cta-strip__lead">Tell us your dates or career goals—we’ll reply with clear next steps.</p>
+        <div class="cta-strip__actions">
+          <a class="btn btn--accent btn--lg" href="/trips">View trips</a>
+          <a class="btn btn--light btn--lg" href="https://wa.me/66966488938" rel="noopener noreferrer" target="_blank">WhatsApp us</a>
+        </div>
+        <div class="cta-strip__contacts">
+          <a href="https://wa.me/66966488938" rel="noopener noreferrer" target="_blank">+66 96 648 8938</a>
+          <a href="mailto:pamillakayingana@gmail.com">pamillakayingana@gmail.com</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="shell site-footer__inner">
-      <p class="site-footer__brand">UbuntuVoyage</p>
-      <p class="site-footer__tagline">From Africa to Asia</p>
-      <div class="site-footer__links">
-        <a href="https://www.instagram.com/travelw_pami/" rel="noopener noreferrer" target="_blank">Instagram</a>
-        <a href="mailto:pamillakayingana@gmail.com">Email</a>
-        <a href="https://wa.me/66966488938" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+    <div class="shell site-footer__grid">
+      <div>
+        <p class="site-footer__brand">UbuntuVoyage</p>
+        <p class="site-footer__tagline">From Africa to Asia</p>
+        <p class="site-footer__blurb">Curated trips and teaching support—one team that understands both journeys.</p>
       </div>
+      <div>
+        <h2 class="site-footer__heading">Explore</h2>
+        <ul class="site-footer__nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/opportunities">Opportunities in Asia</a></li>
+          <li><a href="/trips">Trips &amp; Experiences</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="site-footer__heading">Contact</h2>
+        <ul class="site-footer__contact">
+          <li>
+            <a href="https://wa.me/66966488938" rel="noopener noreferrer" target="_blank">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="mailto:pamillakayingana@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/travelw_pami/" rel="noopener noreferrer" target="_blank">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="shell site-footer__bottom">
       <p class="site-footer__copy">&copy; <span id="year"></span> UbuntuVoyage. All rights reserved.</p>
     </div>
   </footer>

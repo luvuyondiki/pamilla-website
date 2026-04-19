@@ -8,6 +8,31 @@
   status = 200
 
 [[redirects]]
+  from = "/trips"
+  to = "/trips.html"
+  status = 200
+
+[[redirects]]
+  from = "/trips/thailand"
+  to = "/trip-thailand.html"
+  status = 200
+
+[[redirects]]
+  from = "/trips/south-africa"
+  to = "/trip-south-africa.html"
+  status = 200
+
+[[redirects]]
+  from = "/trips/bali"
+  to = "/trip-bali.html"
+  status = 200
+
+[[redirects]]
+  from = "/trips/vietnam"
+  to = "/trip-vietnam.html"
+  status = 200
+
+[[redirects]]
   from = "/travel"
   to = "/opportunities.html"
   status = 301

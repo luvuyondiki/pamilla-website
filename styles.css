@@ -1530,15 +1530,14 @@ a:hover {
 .section--stats {
   padding: var(--section-y-tight) 0;
   color: var(--white);
-  border-block: 1px solid rgba(255, 255, 255, 0.06);
-  background: linear-gradient(180deg, rgba(10, 22, 40, 0.88) 0%, rgba(15, 39, 68, 0.82) 100%);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  border-block: 1px solid rgba(255, 255, 255, 0.1);
+  /* Light tint so the global fixed photo stays clearly visible */
+  background: linear-gradient(180deg, rgba(10, 22, 40, 0.28) 0%, rgba(10, 22, 40, 0.38) 100%);
 }
 
 @supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
   .section--stats {
-    background: linear-gradient(180deg, var(--blue-950) 0%, var(--blue-900) 100%);
+    background: linear-gradient(180deg, rgba(10, 22, 40, 0.36) 0%, rgba(15, 39, 68, 0.46) 100%);
   }
 }
 
@@ -1583,6 +1582,18 @@ a:hover {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.72);
   line-height: 1.35;
+}
+
+.section--stats .stat-strip__value,
+.section--stats .stat-strip__suffix {
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.75),
+    0 2px 22px rgba(0, 0, 0, 0.45);
+}
+
+.section--stats .stat-strip__label {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.82);
 }
 
 .stat-strip--count-3 {
@@ -1760,14 +1771,22 @@ a:hover {
   padding: clamp(2.5rem, 5vw, 3.5rem) 0;
   color: var(--white);
   text-align: center;
-  background: linear-gradient(135deg, rgba(15, 39, 68, 0.82) 0%, rgba(21, 58, 92, 0.78) 45%, rgba(26, 80, 128, 0.76) 100%);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: linear-gradient(
+    135deg,
+    rgba(15, 39, 68, 0.3) 0%,
+    rgba(21, 58, 92, 0.32) 45%,
+    rgba(26, 80, 128, 0.3) 100%
+  );
 }
 
 @supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
   .cta-strip {
-    background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-800) 40%, #1a5080 100%);
+    background: linear-gradient(
+      135deg,
+      rgba(15, 39, 68, 0.4) 0%,
+      rgba(21, 58, 92, 0.44) 40%,
+      rgba(26, 80, 128, 0.42) 100%
+    );
   }
 }
 
@@ -1781,12 +1800,16 @@ a:hover {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
   letter-spacing: -0.02em;
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.75),
+    0 2px 24px rgba(0, 0, 0, 0.4);
 }
 
 .cta-strip__lead {
   margin: 0 0 1.5rem;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.94);
   font-size: 1.0625rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.78);
 }
 
 .cta-strip__actions {
@@ -1809,11 +1832,13 @@ a:hover {
   color: var(--gold-400);
   font-weight: 600;
   text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
 }
 
 .cta-strip__contacts a:hover {
   text-decoration: underline;
   color: var(--white);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
 }
 
 /* Footer — expanded */

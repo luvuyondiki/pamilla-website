@@ -527,20 +527,64 @@ a:hover {
   padding: var(--section-y) 0;
 }
 
+/* Light sections: subtle travel photography + frosted overlay (fixed bg on desktop) */
+.section--about,
+.section--paths,
+.section--destinations,
+.section--detail,
+.section--alt,
+.section--soft {
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center, center;
+  background-attachment: scroll, scroll;
+}
+
+@media (prefers-reduced-motion: no-preference) and (min-width: 769px) {
+  .section--about,
+  .section--paths,
+  .section--destinations,
+  .section--detail,
+  .section--alt,
+  .section--soft {
+    background-attachment: scroll, fixed;
+  }
+}
+
 .section--about {
-  background: var(--white);
+  background-image:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.86) 55%, rgba(244, 248, 253, 0.9) 100%),
+    url("assets/home-2-about.png");
 }
 
 .section--paths {
-  background: linear-gradient(180deg, var(--blue-50) 0%, var(--white) 100%);
+  background-image:
+    linear-gradient(180deg, rgba(244, 248, 253, 0.95) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.92) 100%),
+    url("assets/home-4-travel.png");
+}
+
+.section--destinations {
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.93) 0%, rgba(255, 255, 255, 0.88) 100%),
+    url("assets/opp-travel-bay.png");
 }
 
 .section--detail {
-  background: var(--white);
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(248, 250, 252, 0.9) 100%),
+    url("assets/opp-teach-1.png");
 }
 
 .section--alt {
-  background: var(--blue-50);
+  background-image:
+    linear-gradient(180deg, rgba(244, 248, 253, 0.94) 0%, rgba(255, 255, 255, 0.9) 100%),
+    url("assets/opp-travel-bay.png");
+}
+
+.section--soft {
+  background-image:
+    linear-gradient(180deg, rgba(244, 248, 253, 0.93) 0%, rgba(232, 241, 251, 0.88) 100%),
+    url("assets/home-3-teach.png");
 }
 
 .section--contact {
@@ -1512,10 +1556,6 @@ a:hover {
   .stat-strip--count-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-.section--destinations {
-  background: var(--white);
 }
 
 .dest-grid {

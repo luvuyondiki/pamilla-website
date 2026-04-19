@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations | UbuntuVoyage</title>
+  <meta name="description" content="Browse curated trips by country—Thailand, Bali, Vietnam, South Africa—and use the trip planner to narrow by month and travel style.">
+  <meta property="og:title" content="Destinations | UbuntuVoyage">
+  <meta property="og:description" content="Country hubs with tour styles, transparent pricing, and a simple search to find your fit.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/opp-travel-bay.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-header-wrap" id="site-header-wrap">
+    <div class="topbar">
+      <div class="shell topbar__inner">
+        <a class="topbar__link" href="https://wa.me/66966488938" rel="noopener noreferrer" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          WhatsApp
+        </a>
+        <span class="topbar__sep" aria-hidden="true">|</span>
+        <a class="topbar__link" href="mailto:pamillakayingana@gmail.com">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          pamillakayingana@gmail.com
+        </a>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="brand" href="/">
+          <img src="logo.svg" alt="" width="40" height="40" class="brand__mark" aria-hidden="true">
+          <span class="brand__text">UbuntuVoyage</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-menu-dest" id="nav-toggle">
+            <span class="nav__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="nav__toggle-label">Menu</span>
+          </button>
+          <ul class="nav__list" id="nav-menu-dest">
+            <li><a href="/" class="nav__link">Home</a></li>
+            <li><a href="/opportunities" class="nav__link">Opportunities in Asia</a></li>
+            <li><a href="/trips" class="nav__link">Trips &amp; Experiences</a></li>
+            <li><a href="/destinations" class="nav__link nav__link--active">Destinations</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn--accent btn--sm header-cta" href="#plan">Plan a trip</a>
+      </div>
+    </header>
+  </div>
+
+  <main id="main" data-search-scope>
+    <section class="page-hero page-hero--rich reveal" aria-labelledby="dest-page-title">
+      <div class="shell page-hero__inner">
+        <p class="destinations-hero__label">Travel countries</p>
+        <h1 id="dest-page-title" class="page-hero__title">Destinations</h1>
+        <p class="page-hero__lead">Pick a country hub to compare tour styles side by side—then open the full itinerary, gallery, and booking form when you are ready.</p>
+      </div>
+    </section>
+
+    <section class="section section--about reveal" id="plan" aria-labelledby="plan-title">
+      <div class="shell">
+        <h2 id="plan-title" class="section__title">Plan your trip</h2>
+        <p class="prose">Choose a destination to jump straight into that country’s tours, or stay here and filter the cards below by month and travel style.</p>
+
+        <div class="trip-planner">
+          <h3 class="trip-planner__title">Search</h3>
+          <p class="trip-planner__lead">Same idea as a tour-operator search: narrow the list, then tap through for day-by-day detail.</p>
+          <form class="trip-planner__grid trip-planner__grid--wide" data-trip-search-form data-search-mode="navigate" novalidate>
+            <div class="form-field">
+              <label for="hub-dest">Destination</label>
+              <select id="hub-dest" name="destination">
+                <option value="any" selected>Any destination</option>
+                <option value="thailand">Thailand</option>
+                <option value="bali">Bali</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="south-africa">South Africa</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="hub-month">Month</label>
+              <select id="hub-month" name="month">
+                <option value="any">Any month</option>
+                <option value="jan">January</option>
+                <option value="feb">February</option>
+                <option value="mar">March</option>
+                <option value="apr">April</option>
+                <option value="may">May</option>
+                <option value="jun">June</option>
+                <option value="jul">July</option>
+                <option value="aug">August</option>
+                <option value="sep">September</option>
+                <option value="oct">October</option>
+                <option value="nov">November</option>
+                <option value="dec">December</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="hub-type">Type</label>
+              <select id="hub-type" name="type">
+                <option value="any">Any style</option>
+                <option value="group-tours">Group tours</option>
+                <option value="beaches">Beaches</option>
+                <option value="budget-friendly">Budget friendly</option>
+                <option value="romantic">Romantic</option>
+                <option value="meals-included">Meals included</option>
+                <option value="culture">Culture</option>
+              </select>
+            </div>
+            <div class="trip-planner__actions">
+              <button type="submit" class="btn btn--primary">Search now</button>
+            </div>
+          </form>
+          <p class="trip-planner__status" data-search-results aria-live="polite"></p>
+        </div>
+
+        <div class="dest-hub-grid">
+          <a class="dest-hub-card reveal" href="/destination/thailand" data-search-card data-months="any" data-types="beaches,culture,group-tours,budget-friendly,meals-included,romantic">
+            <figure class="dest-hub-card__media">
+              <img src="assets/opp-travel-bay.png" alt="Thailand limestone bay and boats" width="640" height="400" loading="lazy" decoding="async">
+            </figure>
+            <div class="dest-hub-card__body">
+              <h3 class="dest-hub-card__title">Thailand</h3>
+              <p class="dest-hub-card__text">Bangkok, islands, and night markets—browse tour angles before opening the full 10-day plan.</p>
+            </div>
+          </a>
+          <a class="dest-hub-card reveal" href="/destination/bali" data-search-card data-months="any" data-types="beaches,culture,group-tours,budget-friendly,romantic,meals-included">
+            <figure class="dest-hub-card__media">
+              <img src="assets/home-4-travel.png" alt="Bali tropical beach and hills" width="640" height="400" loading="lazy" decoding="async">
+            </figure>
+            <div class="dest-hub-card__body">
+              <h3 class="dest-hub-card__title">Bali</h3>
+              <p class="dest-hub-card__text">Ubud culture, south-coast beaches, and our signature 8-day island arc.</p>
+            </div>
+          </a>
+          <a class="dest-hub-card reveal" href="/destination/vietnam" data-search-card data-months="any" data-types="beaches,culture,group-tours,budget-friendly,meals-included">
+            <figure class="dest-hub-card__media">
+              <img src="assets/home-3-teach.png" alt="Vietnam coastal boats on turquoise water" width="640" height="400" loading="lazy" decoding="async">
+            </figure>
+            <div class="dest-hub-card__body">
+              <h3 class="dest-hub-card__title">Vietnam</h3>
+              <p class="dest-hub-card__text">Cities, bay overnight, and lantern towns—pick the pace that fits.</p>
+            </div>
+          </a>
+          <a class="dest-hub-card reveal" href="/destination/south-africa" data-search-card data-months="any" data-types="culture,group-tours,budget-friendly,romantic,meals-included">
+            <figure class="dest-hub-card__media">
+              <img src="assets/home-1-hero.png" alt="South African coastline at sunset" width="640" height="400" loading="lazy" decoding="async">
+            </figure>
+            <div class="dest-hub-card__body">
+              <h3 class="dest-hub-card__title">South Africa</h3>
+              <p class="dest-hub-card__text">Cape Town, winelands, and safari window—two ways to sample the country.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__grid">
+      <div>
+        <p class="site-footer__brand">UbuntuVoyage</p>
+        <p class="site-footer__tagline">From Africa to Asia</p>
+        <p class="site-footer__blurb">Curated trips and teaching support—one team that understands both journeys.</p>
+      </div>
+      <div>
+        <h2 class="site-footer__heading">Explore</h2>
+        <ul class="site-footer__nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/opportunities">Opportunities in Asia</a></li>
+          <li><a href="/trips">Trips &amp; Experiences</a></li>
+          <li><a href="/destinations">Destinations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="site-footer__heading">Contact</h2>
+        <ul class="site-footer__contact">
+          <li>
+            <a href="https://wa.me/66966488938" rel="noopener noreferrer" target="_blank">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="mailto:pamillakayingana@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/travelw_pami/" rel="noopener noreferrer" target="_blank">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="shell site-footer__bottom">
+      <p class="site-footer__copy">&copy; <span id="year"></span> UbuntuVoyage. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="trip-search.js"></script>
+</body>
+</html>

@@ -88,6 +88,26 @@ app.get('/trips/vietnam', (req, res) => {
     res.sendFile(path.join(__dirname, 'trip-vietnam.html'));
 });
 
+app.get('/destinations', (req, res) => {
+    res.sendFile(path.join(__dirname, 'destinations.html'));
+});
+
+app.get('/destination/bali', (req, res) => {
+    res.sendFile(path.join(__dirname, 'destination-bali.html'));
+});
+
+app.get('/destination/thailand', (req, res) => {
+    res.sendFile(path.join(__dirname, 'destination-thailand.html'));
+});
+
+app.get('/destination/vietnam', (req, res) => {
+    res.sendFile(path.join(__dirname, 'destination-vietnam.html'));
+});
+
+app.get('/destination/south-africa', (req, res) => {
+    res.sendFile(path.join(__dirname, 'destination-south-africa.html'));
+});
+
 app.get('/travel', (req, res) => {
     res.redirect(301, '/opportunities');
 });

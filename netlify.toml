@@ -33,6 +33,31 @@
   status = 200
 
 [[redirects]]
+  from = "/destinations"
+  to = "/destinations.html"
+  status = 200
+
+[[redirects]]
+  from = "/destination/bali"
+  to = "/destination-bali.html"
+  status = 200
+
+[[redirects]]
+  from = "/destination/thailand"
+  to = "/destination-thailand.html"
+  status = 200
+
+[[redirects]]
+  from = "/destination/vietnam"
+  to = "/destination-vietnam.html"
+  status = 200
+
+[[redirects]]
+  from = "/destination/south-africa"
+  to = "/destination-south-africa.html"
+  status = 200
+
+[[redirects]]
   from = "/travel"
   to = "/opportunities.html"
   status = 301

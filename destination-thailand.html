@@ -50,7 +50,7 @@
             <li><a href="/destinations" class="nav__link nav__link--active">Destinations</a></li>
           </ul>
         </nav>
-        <a class="btn btn--accent btn--sm header-cta" href="/trips/thailand">Full Thailand trip</a>
+        <a class="btn btn--accent btn--sm header-cta" href="/trips/thailand?tour=signature">Full Thailand trip</a>
       </div>
     </header>
   </div>
@@ -76,7 +76,7 @@
       <div class="shell">
         <h2 id="th-tours-title" class="section__title">Tour details</h2>
         <div class="tour-dest-stack">
-          <article class="tour-dest-card reveal" data-search-card data-months="any" data-types="beaches,culture,group-tours,romantic,budget-friendly">
+          <article class="tour-dest-card reveal" data-search-card data-region="bangkok-islands" data-months="any" data-types="beaches,culture,group-tours,romantic,budget-friendly">
             <figure class="tour-dest-card__media">
               <img src="assets/opp-travel-bay.png" alt="Long-tail boats near limestone cliffs in Thailand" width="640" height="480" loading="lazy" decoding="async">
             </figure>
@@ -91,12 +91,12 @@
                 <li><span class="tour-dest-rating">8.9 <span class="tour-dest-rating__word">Great</span></span></li>
               </ul>
               <div class="tour-dest-card__actions">
-                <a class="btn btn--primary" href="/trips/thailand">Tour details</a>
+                <a class="btn btn--primary" href="/trips/thailand?tour=bangkok-islands#book">Tour details</a>
               </div>
             </div>
           </article>
 
-          <article class="tour-dest-card reveal" data-search-card data-months="any" data-types="culture,budget-friendly,group-tours,meals-included">
+          <article class="tour-dest-card reveal" data-search-card data-region="northern" data-months="any" data-types="culture,budget-friendly,group-tours,meals-included">
             <figure class="tour-dest-card__media">
               <img src="assets/home-3-teach.png" alt="Turquoise water and boats in Thailand" width="640" height="480" loading="lazy" decoding="async">
             </figure>
@@ -111,12 +111,12 @@
                 <li><span class="tour-dest-rating">8.7 <span class="tour-dest-rating__word">Great</span></span></li>
               </ul>
               <div class="tour-dest-card__actions">
-                <a class="btn btn--primary" href="/trips/thailand#book">Tour details</a>
+                <a class="btn btn--primary" href="/trips/thailand?tour=northern#book">Tour details</a>
               </div>
             </div>
           </article>
 
-          <article class="tour-dest-card reveal" data-search-card data-months="any" data-types="culture,beaches,group-tours,budget-friendly,romantic,meals-included">
+          <article class="tour-dest-card reveal" data-search-card data-region="signature" data-months="any" data-types="culture,beaches,group-tours,budget-friendly,romantic,meals-included">
             <figure class="tour-dest-card__media">
               <img src="Web images/2.JPG" alt="Coastal Thailand travel moment" width="800" height="600" loading="lazy" decoding="async">
             </figure>
@@ -131,7 +131,7 @@
                 <li><span class="tour-dest-rating">9.2 <span class="tour-dest-rating__word">Superb</span></span></li>
               </ul>
               <div class="tour-dest-card__actions">
-                <a class="btn btn--primary" href="/trips/thailand">Tour details</a>
+                <a class="btn btn--primary" href="/trips/thailand?tour=signature#book">Tour details</a>
               </div>
             </div>
           </article>
@@ -144,8 +144,17 @@
         <h2 id="plan-th-title" class="section__title">Plan your trip</h2>
         <div class="trip-planner">
           <h3 class="trip-planner__title">Search Thailand tours</h3>
-          <p class="trip-planner__lead">Filter by month and style. “Search now” updates the URL so you can paste preferences when you message us.</p>
+          <p class="trip-planner__lead">Filter by focus, month, and style. “Search now” updates the URL so you can paste preferences when you message us.</p>
           <form class="trip-planner__grid trip-planner__grid--wide" data-trip-search-form novalidate>
+            <div class="form-field">
+              <label for="th-focus">Focus</label>
+              <select id="th-focus" name="region">
+                <option value="any">Any focus</option>
+                <option value="bangkok-islands">Bangkok &amp; islands</option>
+                <option value="northern">Northern culture</option>
+                <option value="signature">Islands &amp; culture — signature</option>
+              </select>
+            </div>
             <div class="form-field">
               <label for="th-month">Month</label>
               <select id="th-month" name="month">
@@ -183,6 +192,68 @@
           <p class="trip-planner__status" data-search-results aria-live="polite"></p>
         </div>
         <p class="prose dest-page-links"><a href="/destinations">All destinations</a> · <a href="/trips">Compare every trip</a></p>
+      </div>
+    </section>
+
+    <section class="section section--about reveal" id="inquire" aria-labelledby="dth-inquiry-title">
+      <div class="shell">
+        <h2 id="dth-inquiry-title" class="section__title">Trip inquiry</h2>
+        <p class="prose">Tell us who is travelling, your preferred window, and which Thailand angle interests you—we reply with dates and a written quote.</p>
+        <div class="booking-panel booking-panel--standalone">
+          <form data-trip-booking-form novalidate>
+            <input id="dth-booking-tour" type="hidden" name="tour" value="Thailand — general inquiry">
+            <div class="form-field">
+              <label for="dth-interest">Which trip?</label>
+              <select id="dth-interest" data-thailand-interest aria-describedby="dth-interest-hint">
+                <option value="Thailand — general inquiry">Not sure yet / compare options</option>
+                <option value="Thailand — Bangkok &amp; islands (8 days)">Bangkok &amp; islands (8 days)</option>
+                <option value="Thailand — Northern culture trail (7 days)">Northern culture trail (7 days)</option>
+                <option value="Thailand — Islands &amp; culture — signature (10 days)">Islands &amp; culture — signature (10 days)</option>
+              </select>
+              <p id="dth-interest-hint" class="prose" style="font-size:0.9rem;margin-top:0.35rem;color:var(--text-muted)">This sets the subject line of your inquiry; you can still add detail below.</p>
+            </div>
+            <div class="form-grid form-grid--2">
+              <div class="form-field">
+                <label for="dth-name">Full name</label>
+                <input id="dth-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="dth-email">Email</label>
+                <input id="dth-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="dth-phone">WhatsApp / phone</label>
+                <input id="dth-phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+              <div class="form-field">
+                <label for="dth-travelers">Travellers</label>
+                <select id="dth-travelers" name="travelers">
+                  <option value="1">1</option>
+                  <option value="2" selected>2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5+">5+</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="dth-start">Preferred start</label>
+                <input id="dth-start" name="startDate" type="date">
+              </div>
+              <div class="form-field">
+                <label for="dth-end">Preferred end</label>
+                <input id="dth-end" name="endDate" type="date">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="dth-msg">Month / style / rooming / dietary</label>
+              <textarea id="dth-msg" name="specialRequests" placeholder="e.g. March, beaches + culture, twin room, vegetarian meals."></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn--primary btn--lg">Submit inquiry</button>
+            </div>
+            <p class="form-status" data-trip-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -234,5 +305,16 @@
 
   <script src="script.js"></script>
   <script src="trip-search.js"></script>
+  <script>
+    (function () {
+      var sel = document.querySelector('[data-thailand-interest]');
+      var hidden = document.getElementById('dth-booking-tour');
+      if (!sel || !hidden) return;
+      sel.addEventListener('change', function () {
+        hidden.value = sel.value;
+      });
+    })();
+  </script>
+  <script src="trip-booking.js"></script>
 </body>
 </html>

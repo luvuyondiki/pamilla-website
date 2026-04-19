@@ -202,14 +202,23 @@ app.post('/api/contact', (req, res) => {
 // Booking endpoint
 app.post('/api/book-tour', (req, res) => {
     try {
-        const travelerCount = parseInt(String(req.body.travelers), 10);
+        const travelersRaw = String(req.body.travelers ?? '1').trim();
+        let travelers;
+        if (travelersRaw === '5+') {
+            travelers = '5+';
+        } else {
+            const travelerCount = parseInt(travelersRaw, 10);
+            travelers = Number.isFinite(travelerCount)
+                ? Math.min(50, Math.max(1, travelerCount))
+                : 1;
+        }
         const booking = {
             id: Date.now(),
             tour: req.body.tour,
             name: req.body.name,
             email: req.body.email,
             phone: req.body.phone,
-            travelers: Number.isFinite(travelerCount) ? Math.min(50, Math.max(1, travelerCount)) : 1,
+            travelers,
             startDate: req.body.startDate,
             endDate: req.body.endDate,
             specialRequests: req.body.specialRequests,

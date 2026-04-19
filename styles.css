@@ -1347,6 +1347,10 @@ a:hover {
   box-shadow: var(--shadow-sm);
 }
 
+.booking-panel--standalone {
+  max-width: 40rem;
+}
+
 .booking-panel__title {
   margin: 0 0 0.35rem;
   font-size: 1.35rem;

@@ -5,7 +5,8 @@
   var menu =
     document.getElementById('nav-menu') ||
     document.getElementById('nav-menu-opp') ||
-    document.getElementById('nav-menu-trip');
+    document.getElementById('nav-menu-trip') ||
+    document.getElementById('nav-menu-dest');
 
   if (toggle && menu) {
     toggle.addEventListener('click', function () {
